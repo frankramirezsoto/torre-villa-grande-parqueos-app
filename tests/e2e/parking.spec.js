@@ -28,7 +28,7 @@ test('E1: login carga el dashboard con el piso 1 y sus 10 espacios libres', asyn
 
   await expect(page.getByText('P1-01')).toBeVisible()
   await expect(page.getByText('P1-10')).toBeVisible()
-  await expect(page.getByText('libres')).toBeVisible(10)
+  await expect(page.getByText('LIBRE')).toHaveCount(11) // 10 espacios + el texto que dice 10 espacios libres
 })
 
 test('E2: cambiar a piso 2 muestra los códigos P2-01 a P2-10, no los de piso 1', async ({ page }) => {
