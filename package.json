@@ -1,0 +1,35 @@
+{
+  "name": "torre-villa-grande-parqueos",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:e2e": "vite --mode e2e",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run tests/unit tests/components",
+    "test:watch": "vitest tests/unit tests/components",
+    "test:integration": "vitest run tests/integration",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.1.14",
+    "@playwright/test": "^1.62.1",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.4",
+    "@vitejs/plugin-react": "^4.3.1",
+    "dotenv": "^17.4.2",
+    "jsdom": "^30.0.1",
+    "vite": "^5.4.8",
+    "vitest": "^4.1.10",
+    "tailwindcss": "^4.1.14"
+  }
+}
